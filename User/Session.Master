@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Session.Master.cs" Inherits="Pengurusan_Makmal.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+
+    <title><%: Page.Title %></title>
+
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Content/bootstrap.min.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Custom styles for sticky footer-navbar -->
+    <link href="../Content/sticky-footer-navbar.css" rel="Stylesheet" type="text/css" />
+    
+   <style type="text/css">
+       h4 { color: maroon; } 
+   </style>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>    
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ibnu Sina</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="HomeLink" runat="server"><a href="Default.aspx">Laman Utama</a></li>
+            <li id="InstrumentLink" runat="server"><a href="SearchInstrument.aspx">Instrument</a></li>
+            <li id="reserveLink" runat="server"><a href="ReservationForm.aspx">Tempahan</a></li>
+            <li id="statusReserveLink" runat="server"><a href="#Status">Status Tempahan</a></li>
+            <li id="scheduleLink" runat="server"><a href="Schedule.aspx">Jadual</a></li>
+            <li id="invoiceLink" runat="server"><a href="Invoice.aspx">Invois</a></li>
+            <li id="reportLink" runat="server"><a href="Report.aspx">Aduan</a></li>
+            <li id="statusReportLink" runat="server"><a href="#Status">Status Aduan</a></li>
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="register" runat="server"><a href="register.aspx">Create Account</a></li>
+                <li id="login" runat="server"><a href="login.aspx">Login</a></li>
+                <li id="username" runat="server"><a><asp:Label runat="server" ID="usernameLbl"></asp:Label></a></li>
+                <li id="logout" runat="server"><a href="logout.aspx">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <!-- Fixed navbar -->
+
+    <div class="container">
+        <div class="row">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+    </div>
+        
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted"> FitZY@<%: DateTime.Now.Year %></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap Core Javascript -->
+    <script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+</body>
+</html>
