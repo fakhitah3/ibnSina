@@ -52,6 +52,7 @@ namespace Pengurusan_Makmal
 
                 con.Open();
                 cmd.ExecuteNonQuery();
+                
                 con.Close();
             }
         }

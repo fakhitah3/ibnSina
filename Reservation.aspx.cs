@@ -24,6 +24,12 @@ namespace Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             testToolsTxtBox.Text = toolNameList.SelectedValue;
+            SqlDbEventS.SelectCommand = "SELECT [Id], [username], [tools], [eventStart], [eventEnd] FROM " + programList.SelectedValue + "ExerciseSchedule WHERE NOT (([eventEnd] <= @start) OR ([eventStart] >= @end + 1))";
+            
+            //dbUpdateEvent(e.Value, e.NewStart, e.NewEnd);
+            //reserveSchedule.DataSource = dbGetEvents(reserveSchedule.StartDate, reserveSchedule.Days);
+            reserveSchedule.DataBind();
+            reserveSchedule.Update();
         }
 
         //EventMove DayPilot Calendar
@@ -63,9 +69,12 @@ namespace Admin
         // Select Tools for Dropdown List
         private DataTable dbSelectTools()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT [Id],[tools] FROM [" + programList.SelectedValue + "ExerciseSchedule]", ConfigurationManager.ConnectionStrings["ibnuSinaDBConnectionStringOutsource"].ConnectionString);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT [tools] FROM [tools] WHERE program = '" + programList.SelectedValue + "'", ConfigurationManager.ConnectionStrings["ibnuSinaDBConnectionStringOutsource"].ConnectionString);
             DataTable dt = new DataTable();
             da.Fill(dt);
+
+
+            
 
             return dt;
         }
@@ -104,10 +113,11 @@ namespace Admin
             editEndTxtBox.Text = e.End.ToString("MM/dd/yyyy HH:mm");
             editToolsNameList.DataSource = dbSelectTools();
             editToolsNameList.DataTextField = "tools";
-            editToolsNameList.DataValueField = "Id";
-            editToolsNameList.SelectedValue = e.Value;
+            editToolsNameList.DataValueField = "tools";
+            //editToolsNameList.SelectedValue = "tools";
             editToolsNameList.DataBind();
             HiddenEditID.Value = e.Value;
+            
 
             UpdatePanelEdit.Update();
             ModalPopupEdit.Show();
@@ -118,7 +128,7 @@ namespace Admin
         {
             startTimeTxtBox.Text = e.Start.ToString("MM/dd/yyyy HH:mm");
             endTimeTxtBox.Text = e.End.ToString("MM/dd/yyyy HH:mm");
-
+            
             UpdatePanelDetail.Update();
             ModalPopup.Show();
         }
@@ -171,7 +181,60 @@ namespace Admin
 
         protected void editBtn_Click(object sender, EventArgs e)
         {
+            DateTime start = DateTime.ParseExact(editStartTxtBox.Text, "MM/dd/yyyy HH:mm", Thread.CurrentThread.CurrentCulture);
+            DateTime end = DateTime.ParseExact(editEndTxtBox.Text, "MM/dd/yyyy HH:mm", Thread.CurrentThread.CurrentCulture);
+            String name = testNameTxtBox.Text;
+            String tools = testToolsTxtBox.Text;
 
+            String conn = WebConfigurationManager.ConnectionStrings["ibnuSinaDBConnectionStringOutsource"].ConnectionString;
+
+            string insertSQL = "UPDATE " + programList.SelectedValue + "ExerciseSchedule SET "
+                + "username="
+                + "'" + editUsernameTxtBox.Text + "', "
+                + "tools="
+                + "'" + toolNameList.SelectedValue + "', "
+                + "eventStart="
+                + "'" + start + "', "
+                + "eventEnd="
+                + "'" + end + "'"
+                + " WHERE "
+                + "Id = '" + HiddenEditID.Value + "'";
+
+            SqlConnection con = new SqlConnection(conn);
+            SqlCommand cmd = new SqlCommand(insertSQL, con);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            LabelSQL.Text = insertSQL;
+
+            reserveSchedule.DataBind();
+            UpdatePanelSchedule.Update();
+        }
+
+        protected void deleteBtn_Click(object sender, EventArgs e)
+        {
+            DateTime start = DateTime.ParseExact(editStartTxtBox.Text, "MM/dd/yyyy HH:mm", Thread.CurrentThread.CurrentCulture);
+            DateTime end = DateTime.ParseExact(editEndTxtBox.Text, "MM/dd/yyyy HH:mm", Thread.CurrentThread.CurrentCulture);
+            String name = testNameTxtBox.Text;
+            String tools = testToolsTxtBox.Text;
+
+            String conn = WebConfigurationManager.ConnectionStrings["ibnuSinaDBConnectionStringOutsource"].ConnectionString;
+
+            string insertSQL = "DELETE FROM " + programList.SelectedValue + "ExerciseSchedule "
+                + " WHERE "
+                + "Id = '" + HiddenEditID.Value + "'";
+
+            SqlConnection con = new SqlConnection(conn);
+            SqlCommand cmd = new SqlCommand(insertSQL, con);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            LabelSQL.Text = insertSQL;
+
+            reserveSchedule.DataBind();
+            UpdatePanelSchedule.Update();
         }
    }
 }

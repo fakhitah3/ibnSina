@@ -263,3 +263,108 @@ C:\Users\Ahmad Tahfiz\Desktop\IbnuSinaV6\From Tahfiz\Admin\Admin\bin\Microsoft.O
 C:\Users\Ahmad Tahfiz\Desktop\IbnuSinaV6\From Tahfiz\Admin\Admin\obj\Debug\ibnuSinaLab.csprojResolveAssemblyReference.cache
 C:\Users\Ahmad Tahfiz\Desktop\IbnuSinaV6\From Tahfiz\Admin\Admin\obj\Debug\Admin.dll
 C:\Users\Ahmad Tahfiz\Desktop\IbnuSinaV6\From Tahfiz\Admin\Admin\obj\Debug\Admin.pdb
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Admin.dll.config
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Admin.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Admin.pdb
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Antlr3.Runtime.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Newtonsoft.Json.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Owin.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Optimization.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Providers.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\WebGrease.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Optimization.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Newtonsoft.Json.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Providers.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\obj\Debug\ibnuSinaLab.csprojResolveAssemblyReference.cache
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\obj\Debug\Admin.dll
+C:\Users\mfaeezmazlan\Documents\Visual Studio 2013\Projects\Admin\Admin\obj\Debug\Admin.pdb
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\obj\Debug\ibnuSinaLab.csprojResolveAssemblyReference.cache
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\obj\Debug\Admin.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Admin.dll.config
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Admin.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Admin.pdb
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\AjaxControlToolkit.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Antlr3.Runtime.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Newtonsoft.Json.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Owin.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Optimization.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Providers.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\WebGrease.dll
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Optimization.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Antlr3.Runtime.pdb
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Newtonsoft.Json.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\System.Web.Providers.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ahmad Tahfiz\Documents\Visual Studio 2013\Projects\Admin\Admin\obj\Debug\Admin.pdb

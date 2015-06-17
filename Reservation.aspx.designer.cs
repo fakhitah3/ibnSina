@@ -49,6 +49,15 @@ namespace Admin {
         protected global::System.Web.UI.WebControls.SqlDataSource ListOfItem;
         
         /// <summary>
+        /// HiddenTool control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox HiddenTool;
+        
+        /// <summary>
         /// LabelSQL control.
         /// </summary>
         /// <remarks>
@@ -398,6 +407,24 @@ namespace Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField HiddenEditID;
+        
+        /// <summary>
+        /// HiddenToolsID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenToolsID;
+        
+        /// <summary>
+        /// HideFieldEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HideFieldEdit;
         
         /// <summary>
         /// deleteBtn control.

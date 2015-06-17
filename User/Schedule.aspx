@@ -28,11 +28,16 @@
     
     <div class="row">
         <div class="col-md-offset-4">
-            <asp:Label ID="nameLabel" runat="server" Text="Nama Peralatan"></asp:Label>
-            <asp:DropDownList ID="toolNameList" runat="server">
-                <asp:ListItem></asp:ListItem>
-            </asp:DropDownList>
-        </div>
+                <asp:Label ID="programLabel" runat="server" Text="Pilih Program" CssClass="col-sm-4 control-label"></asp:Label>
+                <div class="col-sm-6">
+                    <asp:DropDownList ID="programList" runat="server" AutoPostBack="true">
+                        <asp:ListItem runat="server" Text="---Pilih Program---" Value="select"></asp:ListItem>
+                        <asp:ListItem runat="server" Text="Chemistry" Value="chemistry"></asp:ListItem>
+                        <asp:ListItem runat="server" Text="Physics" Value="physic"></asp:ListItem>
+                        <asp:ListItem runat="server" Text="Mathematics" Value="mathematic"></asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div>
     </div>
     <!-- /.div for select tools -->
 
@@ -53,9 +58,9 @@
         <div class="col-md-offset-4">
             <asp:UpdatePanel ID="UpdatePanelCalendar" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
                 <ContentTemplate>
-                    <DayPilot:DayPilotCalendar ID="reserveSchedule" runat="server" Days="7" DataStartField="eventStart" DataEndField="eventEnd" DataTextField="fName" DataValueField="Id" AllDayEventBackColor="White" BackColor="#FFFFD5" BorderColor="Black" CellBorderColor="Black" CellSelectColor="#316AC5" Direction="Auto" DurationBarColor="Blue" DurationBarWidth="5" EventBackColor="White" EventBorderColor="Black" EventFontColor="Black" EventSelectColor="Blue" HeaderFontColor="Black" HourBorderColor="#EAD098" HourFontColor="Black" HourHalfBorderColor="#F3E4B1" HourNameBackColor="#ECE9D8" HourNameBorderColor="#ACA899" NonBusinessBackColor="#FFF4BC" ScrollPositionHour="9" ShowAllDayEventStartEnd="True" ShowEventStartEnd="True" StartDate="2015-05-25" Width="" EventClickHandling="PostBack" OnEventClick="reserveSchedule_EventClick" CellHeight="50" OnEventMove="reserveSchedule_EventMove" DataSourceID="SqlDbSchedule" style="top: 0px; left: 0px" EventMoveHandling="CallBack">
+                    <DayPilot:DayPilotCalendar ID="reserveSchedule" runat="server" Days="7" DataStartField="eventStart" DataEndField="eventEnd" DataTextField="username" DataValueField="Id" AllDayEventBackColor="White" BackColor="#FFFFD5" BorderColor="Black" CellBorderColor="Black" CellSelectColor="#316AC5" Direction="Auto" DurationBarColor="Blue" DurationBarWidth="5" EventBackColor="White" EventBorderColor="Black" EventFontColor="Black" EventSelectColor="Blue" HeaderFontColor="Black" HourBorderColor="#EAD098" HourFontColor="Black" HourHalfBorderColor="#F3E4B1" HourNameBackColor="#ECE9D8" HourNameBorderColor="#ACA899" NonBusinessBackColor="#FFF4BC" ScrollPositionHour="9" ShowAllDayEventStartEnd="True" ShowEventStartEnd="True" StartDate="2015-05-25" Width="" EventClickHandling="PostBack" OnEventClick="reserveSchedule_EventClick" CellHeight="50" OnEventMove="reserveSchedule_EventMove" DataSourceID="SqlDbSchedule" style="top: 0px; left: 0px" EventMoveHandling="CallBack">
                     </DayPilot:DayPilotCalendar>
-                    <asp:SqlDataSource ID="SqlDbSchedule" runat="server" ConnectionString="<%$ ConnectionStrings:ibnuSinaDBConnectionStringOutsource %>" SelectCommand="SELECT [Id], [fName], [eventStart], [eventEnd], [tools] FROM [chemistryExerciseSchedule] WHERE NOT (([eventEnd] <= @start) OR ([eventStart] >= @end + 1))">
+                    <asp:SqlDataSource ID="SqlDbSchedule" runat="server" ConnectionString="<%$ ConnectionStrings:ibnuSinaDBConnectionStringOutsource %>" SelectCommand="SELECT [Id], [username], [eventStart], [eventEnd], [tools] FROM [chemistryExerciseSchedule] WHERE NOT (([eventEnd] <= @start) OR ([eventStart] >= @end + 1))">
                         <SelectParameters>
                             <asp:ControlParameter ControlID="reserveSchedule" Name="start" PropertyName="StartDate" />
                             <asp:ControlParameter ControlID="reserveSchedule" Name="end" PropertyName="EndDate" />

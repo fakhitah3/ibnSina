@@ -13,22 +13,22 @@ namespace Pengurusan_Makmal {
     public partial class Schedule {
         
         /// <summary>
-        /// nameLabel control.
+        /// programLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label nameLabel;
+        protected global::System.Web.UI.WebControls.Label programLabel;
         
         /// <summary>
-        /// toolNameList control.
+        /// programList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList toolNameList;
+        protected global::System.Web.UI.WebControls.DropDownList programList;
         
         /// <summary>
         /// reserveCalendar control.

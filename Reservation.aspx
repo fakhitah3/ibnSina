@@ -41,6 +41,7 @@
                     <asp:ControlParameter ControlID="programList" Name="program" PropertyName="SelectedValue" Type="String" />
                 </SelectParameters>
             </asp:SqlDataSource>
+            <asp:TextBox ID="HiddenTool" runat="server" Visible="False"></asp:TextBox>
             <asp:Label ID="LabelSQL" runat="server" Text="LabelSQL"></asp:Label>
         </div>
     </div>
@@ -65,7 +66,7 @@
             <asp:UpdatePanel ID="UpdatePanelSchedule" runat="server" ChildrenAsTriggers="False" UpdateMode="Conditional">
                 <ContentTemplate>
                     <DayPilot:DayPilotCalendar ID="reserveSchedule" runat="server" DataResourceField="tools" DataStartField="eventStart" DataTextField="username" DataValueField="Id" Days="7" EventMoveHandling="CallBack" OnEventMove="reserveSchedule_EventMove" BackColor="#FFFFD5" BorderColor="#000000" CssClassPrefix="calendar_default" DataIdField="Id" DataSourceID="SqlDbEventS" DayFontFamily="Tahoma" DayFontSize="10pt" DurationBarColor="Blue" EventBackColor="#FFFFFF" EventBorderColor="#000000" EventClickHandling="PostBack" EventFontFamily="Tahoma" EventFontSize="8pt" EventHoverColor="#DCDCDC" HourBorderColor="#EAD098" HourFontFamily="Tahoma" HourFontSize="16pt" HourHalfBorderColor="#F3E4B1" HourNameBackColor="#ECE9D8" HourNameBorderColor="#ACA899" HoverColor="#FFED95" NonBusinessBackColor="#FFF4BC" ScrollPositionHour="9" StartDate="2015-06-10" style="top: 0px; left: 0px" DataEndField="eventEnd" OnEventClick="reserveSchedule_EventClick" OnTimeRangeSelected="reserveSchedule_TimeRangeSelected" TimeRangeSelectedHandling="PostBack"></DayPilot:DayPilotCalendar>
-                    <asp:SqlDataSource ID="SqlDbEventS" runat="server" ConnectionString="<%$ ConnectionStrings:ibnuSinaDBConnectionStringOutsource %>" SelectCommand="SELECT [Id], [username], [tools], [eventStart], [eventEnd] FROM [chemistryExerciseSchedule] WHERE NOT (([eventEnd] &lt;= @start) OR ([eventStart] &gt;= @end + 1))">
+                    <asp:SqlDataSource ID="SqlDbEventS" runat="server" ConnectionString="<%$ ConnectionStrings:ibnuSinaDBConnectionStringOutsource %>">
                         <SelectParameters>
                             <asp:ControlParameter ControlID="reserveSchedule" Name="start" PropertyName="StartDate" />
                             <asp:ControlParameter ControlID="reserveSchedule" Name="end" PropertyName="EndDate" />
@@ -135,7 +136,7 @@
         </asp:Panel>
     <!-- /. AJAX Control Toolkit ModalPopup Create New -->
 
-        <ajaxtoolkit:modalpopupextender ID="ModalPopupEdit" runat="server" TargetControlID="editBtn" PopupControlID="pnlPopupEdit" BackgroundCssClass="modalBackground" CancelControlID="cancelEditBtn" />
+        <ajaxtoolkit:modalpopupextender ID="ModalPopupEdit" runat="server" TargetControlID="HideFieldEdit" PopupControlID="pnlPopupEdit" BackgroundCssClass="modalBackground" CancelControlID="cancelEditBtn" />
         <asp:Panel ID="pnlPopupEdit" runat="server" CssClass="modalPopup modal-content">
             <asp:UpdatePanel ID="UpdatePanelEdit" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
@@ -180,13 +181,14 @@
                                         </div><!-- /.div for end time -->
 
                                         <asp:HiddenField ID="HiddenEditID" runat="server"></asp:HiddenField>
-
+                                        <asp:HiddenField ID="HiddenToolsID" runat="server"></asp:HiddenField>
                                   </div>
                                  </div>
                 </ContentTemplate>
             </asp:UpdatePanel>            
                 <div class="modal-footer">
-                    <asp:Button ID="deleteBtn" runat="server" Text="Padam" CssClass="btn btn-danger"/>
+                    <asp:HiddenField ID="HideFieldEdit" runat="server"></asp:HiddenField>
+                    <asp:Button ID="deleteBtn" runat="server" Text="Padam" CssClass="btn btn-danger" OnClick="deleteBtn_Click"/>
                     <asp:Button ID="editBtn" runat="server" Text="Ubah" CssClass="btn btn-primary" OnClick="editBtn_Click" />
                     <asp:Button ID="cancelEditBtn" runat="server" Text="Tutup"  CssClass="btn btn-default" />
                 </div>
