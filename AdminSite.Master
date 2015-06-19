@@ -69,7 +69,7 @@
             
             <div class="row placeholder">
                 <footer>
-                    <p>&copy; FitZY@<%: DateTime.Now.Year %><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></p>
+                    <p>&copy; FitZY@<%: DateTime.Now.Year %></p>
                 </footer>
             </div> 
         </div>
