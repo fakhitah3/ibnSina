@@ -49,12 +49,12 @@
         <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Peralatan <span class="sr-only">(current)</span></a></li>
-            <li><a href="Management.aspx">Tempahan</a></li>
-            <li><a href="Reservation.aspx">Jadual</a></li>
-            <li><a href="ReportAdmin.aspx">Laporan</a></li>
-            <li><a href="Maintenance.aspx">Penyelenggaraan</a></li>
-            <li><a href="ComplaintAdmin.aspx">Aduan</a></li>
+            <li><a href="#"></a></li>
+            <li id="ManagementLink" runat="server"><a href="Management.aspx">Tempahan</a></li>
+            <li id="ReservationLink" runat="server"><a href="Reservation.aspx">Jadual</a></li>
+            <li id="ReportLink" runat="server"><a href="ReportAdmin.aspx">Laporan</a></li>
+            <li id="MaintenanceLink" runat="server"><a href="Maintenance.aspx">Penyelenggaraan</a></li>
+            <li id="ComplaintLink" runat="server"><a href="ComplaintAdmin.aspx">Aduan</a></li>
           </ul>
         </div>
         <!-- /.sidebar -->
@@ -69,7 +69,7 @@
             
             <div class="row placeholder">
                 <footer>
-                    <p>&copy; FitZY@<%: DateTime.Now.Year %></p>
+                    <p>&copy; FitZY@<%: DateTime.Now.Year %><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></p>
                 </footer>
             </div> 
         </div>

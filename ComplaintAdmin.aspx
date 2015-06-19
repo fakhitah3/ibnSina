@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/AdminSite.Master" AutoEventWireup="true" CodeBehind="ComplaintAdmin.aspx.cs" Inherits="Admin.ComplaintAdmin" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/AdminSite.Master" AutoEventWireup="true" CodeBehind="ComplaintAdmin.aspx.cs" Inherits="Admin.ComplaintAdmin" Title="Aduan"%>
 
 <asp:Content ID="complainContent" ContentPlaceHolderID="MainContent" runat="server">
      <h1 class="page-header">Pengurusan Aduan Program</h1>

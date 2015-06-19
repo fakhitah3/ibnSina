@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/AdminSite.Master" AutoEventWireup="true" CodeBehind="Management.aspx.cs" Inherits="Admin.About" %>
+﻿<%@ Page Title="Pengurusan Tempahan" Language="C#" MasterPageFile="~/AdminSite.Master" AutoEventWireup="true" CodeBehind="Management.aspx.cs" Inherits="Admin.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h1 class="page-header">Pengurusan Tempahan Peralatan Program</h1>

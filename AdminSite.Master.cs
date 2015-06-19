@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using System.Linq;
 namespace Admin
 {
     public partial class SiteMaster : MasterPage
@@ -68,12 +68,47 @@ namespace Admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SetCurrentPage();
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut();
+        }
+
+        private void SetCurrentPage()
+        {
+            var pageName = GetPageName();
+
+            Label1.Text = GetPageName();
+
+            switch (pageName)
+            {
+                case "Management":
+                    ManagementLink.Attributes["class"] = "active";
+                    break;
+
+                case "Reservation":
+                    ReservationLink.Attributes["class"] = "active";
+                    break;
+
+                case "ReportAdmin":
+                    ReportLink.Attributes["class"] = "active";
+                    break;
+
+                case "Maintenance":
+                    MaintenanceLink.Attributes["class"] = "active";
+                    break;
+
+                case "ComplaintAdmin":
+                    ComplaintLink.Attributes["class"] = "active";
+                    break;
+            }
+        }
+
+        private String GetPageName()
+        {
+            return Request.Url.ToString().Split('/').Last();
         }
     }
 

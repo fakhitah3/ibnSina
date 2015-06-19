@@ -108,8 +108,7 @@
            </div>
            <!-- /.div for reservation -->
         </div>
-</div>
-
+ 
 <div class="row">
     <div class="col-md-6">
         <h4>2. Maklumat Penyelidikan:</h4>
@@ -131,8 +130,9 @@
                 </SelectParameters>
             </asp:SqlDataSource>
         </asp:Panel>
-        
-    </form>
+       
     </div>
+</div>
+</form>
 </div>
 </asp:Content>

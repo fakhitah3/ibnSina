@@ -1,6 +1,7 @@
-﻿<%@ Page Title="Penjanaan Invois Tempahan" Language="C#" MasterPageFile="~/AdminSite.Master" AutoEventWireup="true" CodeBehind="invoice.aspx.cs" Inherits="Admin.Penolong_Pendaftar.invoice" %>
+﻿<%@ Page Title="Penjanaan Invois Tempahan" Language="C#" MasterPageFile="~/User/Session.Master" AutoEventWireup="true" CodeBehind="invoice.aspx.cs" Inherits="Admin.Penolong_Pendaftar.invoice" %>
 
 <asp:Content ID="invoiceContent" ContentPlaceHolderID="MainContent" runat="server">
+<form runat="server">
     <h1 class="page-header">Invois Tempahan Program</h1>
     
     <div class="row">
@@ -130,4 +131,5 @@
         </div>
     </div>
     <!-- /.div for invoice -->
+    </form>
 </asp:Content>
